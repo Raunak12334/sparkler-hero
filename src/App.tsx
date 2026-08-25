@@ -61,7 +61,7 @@ export default function App() {
 
           <motion.div
             className="nav-glass nav-glass-border flex items-center gap-4 sm:gap-10 rounded-xl px-4 sm:px-8 py-2.5 sm:py-3 hover:bg-white/75 transition-colors duration-300"
-            whileHover={reducedMotion ? undefined : { backgroundColor: "rgba(255,255,255,0.78)" }}
+            {...(reducedMotion ? {} : { whileHover: { backgroundColor: "rgba(255,255,255,0.78)" } })}
             transition={interactionTransition}
           >
             {NAV_LINKS.map((link) => (
