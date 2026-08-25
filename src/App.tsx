@@ -53,7 +53,7 @@ export default function App() {
         >
           <motion.div
             className="nav-glass nav-glass-border flex items-center justify-center rounded-full w-10 h-10 sm:w-11 sm:h-11 shrink-0 active:scale-[0.97] transition-transform duration-100 ease-out"
-            whileTap={reducedMotion ? undefined : { scale: 0.97 }}
+            {...(reducedMotion ? {} : { whileTap: { scale: 0.97 } })}
             transition={interactionTransition}
           >
             <Logo />
