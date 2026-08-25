@@ -61,6 +61,33 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@utility nav-glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px) saturate(180%);
+}
+
+@utility nav-glass-border {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-glass,
+  .nav-glass-border {
+    transition: none !important;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .nav-glass {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: none;
+  }
+
+  .nav-glass-border {
+    border-top-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
