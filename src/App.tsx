@@ -35,38 +35,23 @@ export default function App() {
       />
 
       <div className="relative z-10 flex flex-col min-h-screen">
-        <motion.nav
-          initial={reducedMotion ? false : { y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={navTransition}
-          className="flex items-center justify-center pt-4 sm:pt-6 px-4 sm:px-8 gap-2 sm:gap-3"
-        >
-          <motion.div
-            className="nav-glass nav-glass-border flex items-center justify-center rounded-full w-10 h-10 sm:w-11 sm:h-11 shrink-0 active:scale-[0.97] transition-transform duration-100 ease-out"
-            {...(reducedMotion ? {} : { whileTap: { scale: 0.97 } })}
-            transition={interactionTransition}
-          >
+        <nav className="animate-fade-in flex items-center justify-center pt-4 sm:pt-6 px-4 sm:px-8 gap-2 sm:gap-3">
+          <div className="nav-glass nav-glass-border flex items-center justify-center rounded-full w-10 h-10 sm:w-11 sm:h-11 shrink-0 active:scale-[0.97] transition-transform duration-100 ease-out">
             <Logo />
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="nav-glass nav-glass-border flex items-center gap-4 sm:gap-10 rounded-xl px-4 sm:px-8 py-2.5 sm:py-3 hover:bg-white/75 transition-colors duration-300"
-            {...(reducedMotion ? {} : { whileHover: { backgroundColor: "rgba(255,255,255,0.78)" } })}
-            transition={interactionTransition}
-          >
+          <div className="nav-glass nav-glass-border flex items-center gap-4 sm:gap-10 rounded-xl px-4 sm:px-8 py-2.5 sm:py-3 hover:bg-white/75 transition-colors duration-300">
             {NAV_LINKS.map((link) => (
-              <motion.a
+              <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className="text-[12px] sm:text-[14px] font-medium tracking-wide text-gray-700 hover:text-gray-900 active:scale-[0.97] transition-transform duration-100 ease-out"
-                {...(reducedMotion ? {} : { whileHover: { color: "#111827" }, whileTap: { scale: 0.97 } })}
-                transition={interactionTransition}
+                className="text-[12px] sm:text-[14px] font-medium tracking-wide text-gray-700 hover:text-gray-900 active:scale-[0.97] transition-all duration-150 ease-out"
               >
                 {link}
-              </motion.a>
+              </a>
             ))}
-          </motion.div>
-        </motion.nav>
+          </div>
+        </nav>
 
         <div className="flex-1 flex items-end pb-10 sm:pb-16 lg:pb-20 px-6 sm:px-12 md:px-20 lg:px-28">
           <div className="max-w-xs">
