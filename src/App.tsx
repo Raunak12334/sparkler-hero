@@ -70,7 +70,8 @@ export default function App() {
             </a>
 
             <h1 className="text-[1.5rem] sm:text-[1.75rem] leading-[1.15] font-medium text-gray-900 tracking-tight mb-3">
-              Simple, smart prosthetics made for people who keep fighting.
+              The LaunchPad for
+              Early Stage Startup
             </h1>
 
             <p className="text-[13px] text-gray-400 font-normal mb-3">
