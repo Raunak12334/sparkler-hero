@@ -69,8 +69,7 @@ export default function App() {
                 key={link}
                 href={`#${link.toLowerCase()}`}
                 className="text-[12px] sm:text-[14px] font-medium tracking-wide text-gray-700 hover:text-gray-900 active:scale-[0.97] transition-transform duration-100 ease-out"
-                whileHover={reducedMotion ? undefined : { color: "#111827" }}
-                whileTap={reducedMotion ? undefined : { scale: 0.97 }}
+                {...(reducedMotion ? {} : { whileHover: { color: "#111827" }, whileTap: { scale: 0.97 } })}
                 transition={interactionTransition}
               >
                 {link}
