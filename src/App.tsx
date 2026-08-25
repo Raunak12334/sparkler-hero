@@ -23,16 +23,6 @@ function Logo() {
 }
 
 export default function App() {
-  const reducedMotion = useReducedMotion();
-
-  const navTransition = reducedMotion
-    ? { duration: 0 }
-    : { type: "spring" as const, bounce: 0, duration: 0.4 };
-
-  const interactionTransition = reducedMotion
-    ? { duration: 0 }
-    : { type: "spring" as const, bounce: 0, duration: 0.25 };
-
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#f0f0ee]">
       <video
