@@ -59,7 +59,7 @@ export default function App() {
               href="#"
               className="inline-flex items-center gap-1.5 text-[11.5px] font-medium text-blue-500 hover:text-blue-600 transition-colors mb-3 group"
             >
-              Seen on Shark Tank in India
+              let Your Business off the ground 
               <span className="inline-block transition-transform duration-200 group-hover:translate-x-0.5">
                 →
               </span>
@@ -71,17 +71,14 @@ export default function App() {
             </h1>
 
             <p className="text-[13px] text-gray-400 font-normal mb-3">
-              Reclaim your movement now.
+              let One Founder building dollar One Billion Company with the help of OtogentAI 
             </p>
 
             <a
               href="#fitting"
               className="inline-flex items-center gap-2 text-[13px] font-medium text-blue-500 border border-blue-400 rounded-full px-5 py-2.5 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all duration-200 group"
             >
-              Try a free fitting
-              <span className="transition-transform duration-200 group-hover:translate-x-0.5">
-                →
-              </span>
+              Take-Off your Startup
             </a>
           </div>
         </div>
